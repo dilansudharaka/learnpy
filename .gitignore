@@ -1,0 +1,34 @@
+# Python
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets – never commit
+.env
+.env.*
+!.env.example
+
+# Databases created by the app
+*.db
+*.sqlite3
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# My own files to exclude (add yours here)
+scratch/
+notes-private.md
