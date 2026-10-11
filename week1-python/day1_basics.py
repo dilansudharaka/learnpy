@@ -2,7 +2,7 @@ x = 10
 if x > 5:
     print("big")
 elif x == 5:
-    print("five") # "else if is elif"
+    print("five")  # "else if is elif"
 else:
     print("small")
 
@@ -29,7 +29,7 @@ for i in range(5):
     print(i)
 
 for i in range(1, 10, 2):  # start, stop(exclusive), step
-    print(i)    # prints 1, 3, 5, 7, 9
+    print(i)  # prints 1, 3, 5, 7, 9
 
 for ch in "hello":
     print(ch)
@@ -42,7 +42,7 @@ while n > 0:
     n -= 1
     print(n)
 
-items =[]
+items = []
 if not items:
     print("empty")
 
@@ -50,11 +50,12 @@ if not items:
 print("Exercise 1: F -> C")
 Cs = [0, 25, 37.5, 100]
 for c in Cs:
-    f = c * 9/5 + 32
+    f = c * 9 / 5 + 32
     print(f"{c}C = {f}F")
 
+
 def grage(score):
-    if score >= 90 :
+    if score >= 90:
         return "A"
     elif score >= 80:
         return "B"
@@ -65,7 +66,8 @@ def grage(score):
     else:
         return "F"
 
-scores =[92, 45, 78, 67, 88]
+
+scores = [92, 45, 78, 67, 88]
 for score in scores:
     print(f"{score=}, grade={grage(score)}")
 
@@ -75,6 +77,7 @@ while start > 0:
     start -= 1
 print("Leftoff")
 
+
 def count_vowels(word):
     count = 0
     for ch in word:
@@ -82,12 +85,17 @@ def count_vowels(word):
             count += 1
     return count
 
-print(f"Vowels in word 'Dilan is soo fucking ass hole' is {count_vowels('Dilan is soo fucking ass hole')}")
+
+print(
+    f"Vowels in word 'Dilan is soo fucking ass hole' is {count_vowels('Dilan is soo fucking ass hole')}"
+)
+
 
 def print_table():
     for row in range(1, 10):
         for col in range(1, 10):
-            print(f"{row*col: 3}", end="")
+            print(f"{row * col: 3}", end="")
         print()
+
 
 print_table()
